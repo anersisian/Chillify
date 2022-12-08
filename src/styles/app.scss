@@ -23,6 +23,11 @@
   user-select: none; /* Standard syntax */
 }
 
+#root {
+  min-height: 100vh;
+  overflow: hidden;
+}
+
 .library-active {
   margin-left: 30%;
 }
