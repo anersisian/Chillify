@@ -1,0 +1,59 @@
+:root {
+  --font-base: "Lato", sans-serif;
+
+  --primary-color: #eef8f4;
+  --secondary-color: #5d917f;
+  --black-color: #030303;
+  --lightGray-color: #e4e4e4;
+  --gray-color: #6b7688;
+  --dark-green-color: #101916;
+  --lightGreen-color: #487063;
+  --brown-color: #46364a;
+  --white-color: #fbfefd;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-base);
+
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.library-active {
+  margin-left: 30%;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--dark-green-color);
+}
+
+h3,
+h4 {
+  font-weight: 400;
+}
+
+::-webkit-scrollbar {
+  height: 12px;
+  width: 5px;
+  background: var(--primary-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--secondary-color);
+  -webkit-border-radius: 1ex;
+}
+
+::-webkit-scrollbar-corner {
+  background: var(--primary-color);
+}
+
+@import "./song";
+@import "./player";
+@import "./library";
+@import "./nav";
